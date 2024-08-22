@@ -1,0 +1,47 @@
+@keyframes forwardAnimation1 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.forwardAnimation1 {
+  animation: forwardAnimation1 linear infinite;
+}
+
+@keyframes forwardAnimation2 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+.forwardAnimation2 {
+  animation: forwardAnimation2 linear infinite;
+}
+
+@keyframes reverseAnimation1 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.reverseAnimation1 {
+  animation: reverseAnimation1 linear infinite;
+}
+
+@keyframes reverseAnimation2 {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.reverseAnimation2 {
+  animation: reverseAnimation2 linear infinite;
+}

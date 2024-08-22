@@ -6,10 +6,10 @@ export default function Social() {
   return (
     <div className="relative col-[1/10] row-[9/11] ">
       <div className="flex felx-row gap-2 col-[2/8] bg-primary p-[30px] rounded-[20px] border-y-2 border-borderColor">
-        <Icon data={githubIcon} />
-        <Icon data={linkedinIcon} />
-        <Icon data={mailIcon} />
-        <Icon data={whatsAppIcon} />
+        <Icon data={[githubIcon, "GitHub"]} />
+        <Icon data={[linkedinIcon, "LinkedIn"]} />
+        <Icon data={[mailIcon, "Mail"]} />
+        <Icon data={[whatsAppIcon, "WhatsApp"]} />
       </div>
       <FadingLeft />
     </div>

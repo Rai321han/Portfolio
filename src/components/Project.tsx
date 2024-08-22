@@ -23,10 +23,10 @@ export default function Project({ project }: ProjectDataType) {
         <div></div>
         <div className="flex flex-row gap-2 justify-stretch">
           <a href={repoLink} target="blank">
-            <Icon data={githubIcon} />
+            <Icon data={[githubIcon, "GitHub Repo"]} />
           </a>
           <a href={liveLink} target="blank">
-            <Icon data={externalLinkIcon} />
+            <Icon data={[externalLinkIcon, "See Live"]} />
           </a>
         </div>
       </div>

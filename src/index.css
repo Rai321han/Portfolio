@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "chaney";
+    src: url("../public/fonts/chaney-ultraextended-webfont.woff") format("woff"),
+      url("../public/fonts/chaney-ultraextended-webfont.woff2") format("woff2");
+  }
+}
+
+.light {
+  --background: #ffffff;
+  --primary: #f3f3f3;
+  --primary-dim: #dedede;
+  --secondary: #8eabb4;
+  --secondary-dim: #155263;
+  --text-color: #155263;
+  --text-color-dim: #8eabb4;
+  --icon-color: #155263;
+  --border-color: #dedede;
+}
+
+.dark {
+  --background: #0f0f0f;
+  --primary: #2d2d2d;
+  --primary-dim: #0f0f0f;
+  --secondary: #f3f3f3;
+  --secondary-dim: #dedede;
+  --text-color: #f3f3f3;
+  --text-color-dim: #8b8b8b;
+  --icon-color: #f3f3f3;
+  --border-color: #5a5a5a;
+  --fadingColor: #201f1f;
+}

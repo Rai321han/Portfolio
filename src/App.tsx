@@ -1,0 +1,23 @@
+import HeaderMarquee from "./components/HeaderMarquee";
+import Intro from "./components/Intro";
+import Resume from "./components/Resume";
+import Share from "./components/Share";
+import Social from "./components/Social";
+import Tech from "./components/Tech";
+import Works from "./components/Works";
+
+function App() {
+  return (
+    <div className="text-textColor text-xl grid grid-cols-12 gap-2 grid-row-20">
+      <HeaderMarquee />
+      <Intro />
+      <Resume />
+      <Tech />
+      <Social />
+      <Share />
+      <Works />
+    </div>
+  );
+}
+
+export default App;

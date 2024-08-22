@@ -36,19 +36,19 @@ export default function HeaderMarquee() {
         </div>
         <div className="animate-marquee whitespace-nowrap">
           <span className="font-prosto text-textColorDim"> PERSONAL </span>
-          <span className="font-chaney">PORTFOLIO </span>
+          <span className="font-chaney text-textColorDim">PORTFOLIO </span>
           <span>|</span>
           <span className="font-prosto text-textColorDim"> PERSONAL </span>
-          <span className="font-chaney">PORTFOLIO </span>
+          <span className="font-chaney text-textColorDim">PORTFOLIO </span>
           <span>|</span>
           <span className="font-prosto text-textColorDim"> PERSONAL </span>
-          <span className="font-chaney">PORTFOLIO </span>
+          <span className="font-chaney text-textColorDim">PORTFOLIO </span>
           <span>|</span>
           <span className="font-prosto text-textColorDim"> PERSONAL </span>
-          <span className="font-chaney">PORTFOLIO </span>
+          <span className="font-chaney text-textColorDim">PORTFOLIO </span>
           <span>|</span>
           <span className="font-prosto text-textColorDim"> PERSONAL </span>
-          <span className="font-chaney">PORTFOLIO </span>
+          <span className="font-chaney text-textColorDim">PORTFOLIO </span>
           <span>|</span>
           <span className="font-prosto text-textColorDim"> PERSONAL </span>
           <span className="font-chaney text-textColorDim">PORTFOLIO </span>

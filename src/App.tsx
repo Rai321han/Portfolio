@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import HeaderMarquee from "./components/HeaderMarquee";
 import Intro from "./components/Intro";
 import Resume from "./components/Resume";
@@ -16,6 +17,7 @@ function App() {
       <Social />
       <Share />
       <Works />
+      <Footer />
     </div>
   );
 }

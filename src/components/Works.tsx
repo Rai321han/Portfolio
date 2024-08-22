@@ -26,7 +26,7 @@ const worksData: WorksDataType = [
 
 export default function Works() {
   return (
-    <div className="relative flex flex-col gap-4 col-[2/12] row-[11/16] bg-primary p-[30px] rounded-[20px] border-y-2 border-borderColor">
+    <div className="relative flex flex-col gap-4 col-[1/14] row-[11/16] bg-primary p-[30px] rounded-[20px] border-y-2 border-borderColor">
       <SectionHead className="text-center">WORKS</SectionHead>
       <ProjectsSlide worksData={worksData} />
       <FadingLeft />

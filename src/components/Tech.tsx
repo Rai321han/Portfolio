@@ -16,7 +16,7 @@ import Icon from "./Icon";
 
 export default function Tech() {
   return (
-    <div className="relative flex flex-col gap-4 items-center col-[2/12] row-[8/9] bg-primary rounded-[20px] border-y-[2px] border-borderColor p-[30px]">
+    <div className="relative flex flex-col gap-4 items-center col-[1/14] row-[8/9] bg-primary rounded-[20px] border-y-[2px] border-borderColor p-[30px]">
       <SectionHead className="text-[1.3rem]">TECH</SectionHead>
       <div className="relative w-full overflow-x-hidden">
         <div className="flex flex-row gap-2">

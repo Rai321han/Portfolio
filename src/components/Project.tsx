@@ -21,7 +21,7 @@ export default function Project({ project }: ProjectDataType) {
       </div>
       <div className="flex flex-row justify-between items-center mt-5">
         <div></div>
-        <div className="flex flex-row gap-2">
+        <div className="flex flex-row gap-2 justify-stretch">
           <a href={repoLink} target="blank">
             <Icon data={githubIcon} />
           </a>

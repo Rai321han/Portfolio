@@ -4,7 +4,7 @@ import FadingRight from "./FadingRight";
 
 export default function Intro() {
   return (
-    <div className="relative flex gap-[20px] flex-col justify-center items-center col-[2/12] p-[30px] rounded-[20px] border-y-[2px] border-borderColor row-[3/6] bg-primary">
+    <div className="relative flex gap-[20px] flex-col justify-center items-center col-[1/14] p-[30px] rounded-[20px] border-y-[2px] border-borderColor row-[3/6] bg-primary">
       <div className="text-textColor flex flex-col justify-center items-center gap-4">
         <div className="text-4xl font-chaney text-center">
           RAIHAN

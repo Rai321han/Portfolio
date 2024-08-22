@@ -3,7 +3,7 @@ import FadingRight from "./FadingRight";
 import SectionHead from "./SectionHead";
 export default function Resume() {
   return (
-    <div className="flex flex-row justify-between relative col-[2/12] p-[30px] row-[6/8] bg-primary border-y-[2px] border-borderColor rounded-[20px]">
+    <div className="flex flex-row justify-between relative col-[1/14] p-[30px] row-[6/8] bg-primary border-y-[2px] border-borderColor rounded-[20px]">
       <SectionHead className="text-[1.3rem]">RESUME</SectionHead>
       <div className="flex felx-row gap-4 items-center">
         <a href="#">

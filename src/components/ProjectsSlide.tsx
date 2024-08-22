@@ -14,8 +14,12 @@ export default function ProjectsSlide({ worksData }: ProjectSlideDataType) {
   return (
     <div className="relative">
       {renderedProjects}
-      <div className="absolute top-1/2 -left-10 z-[10]">{leftSlideIcon}</div>
-      <div className="absolute top-1/2 -right-10 z-[10]">{rightSlideIcon}</div>
+      <div className="absolute top-1/2 -left-[10px] z-[10]">
+        {leftSlideIcon}
+      </div>
+      <div className="absolute top-1/2 -right-[10px] z-[10]">
+        {rightSlideIcon}
+      </div>
     </div>
   );
 }

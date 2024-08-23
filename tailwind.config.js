@@ -5,11 +5,23 @@ export default {
     extend: {
       animation: {
         marquee: "marquee 20s linear infinite",
+        imageChangeAnimation: "imageChangeAnimation 300ms ease-out",
+        ScaleYanimation: "ScaleYanimation 300ms ease-in",
       },
       keyframes: {
         marquee: {
           "0%": { transform: "translateX(0%)" },
           "100%": { transform: "translateX(-100%)" },
+        },
+        imageChangeAnimation: {
+          "0%": { transform: "scale(90%)" },
+
+          "100%": { transform: "scale(100%)" },
+        },
+        ScaleYanimation: {
+          "0%": { transform: "scaleY(5%)" },
+
+          "100%": { transform: "scaleY(100%)" },
         },
       },
 

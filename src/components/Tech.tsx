@@ -32,7 +32,7 @@ export default function Tech() {
   ));
 
   return (
-    <div className="relative flex flex-col gap-4 items-center col-[1/14] row-[8/9] bg-primary rounded-[20px] border-y-[2px] border-borderColor p-[30px]">
+    <div className="relative flex flex-col gap-4 items-center col-[1/14] row-[5/6] bg-primary rounded-[20px] border-y-[2px] border-borderColor p-[30px]">
       <SectionHead className="text-[1.3rem]">TECH</SectionHead>
       <InfiniteSlide items={items} time={30} className="w-[100%] py-[5px] " />
       <FadingLeft />

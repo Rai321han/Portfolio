@@ -9,7 +9,7 @@ import Works from "./components/Works";
 
 function App() {
   return (
-    <div className="text-textColor text-xl grid grid-cols-12 gap-2 grid-row-20">
+    <div className="text-textColor text-xl grid grid-cols-12 gap-2 grid-row-20 grid-rows-[repeat(6,_auto)_repeat(3,auto)_auto]">
       <HeaderMarquee />
       <Intro />
       <Resume />

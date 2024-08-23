@@ -58,8 +58,8 @@ export const downloadIcon = (
 
 export const externalLinkIcon = (
   <svg
-    width="23"
-    height="23"
+    width="26"
+    height="26"
     viewBox="0 0 23 23"
     xmlns="http://www.w3.org/2000/svg"
     className="fill-iconColor group-hover:fill-blue-500 "
@@ -153,7 +153,7 @@ export const linkedinIcon = (
 export const mailIcon = (
   <svg
     width="26"
-    height="19"
+    height="26"
     viewBox="0 0 26 19"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -199,8 +199,8 @@ export const rightSlideIcon = (
 
 export const shareIcon = (
   <svg
-    width="21"
-    height="21"
+    width="26"
+    height="26"
     viewBox="0 0 21 21"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

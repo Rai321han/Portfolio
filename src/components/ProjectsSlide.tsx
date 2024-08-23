@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { WorksDataType } from "../types";
 import Project from "./Project";
 import { leftSlideIcon, rightSlideIcon } from "./icons";
@@ -7,17 +8,31 @@ type ProjectSlideDataType = {
 };
 
 export default function ProjectsSlide({ worksData }: ProjectSlideDataType) {
-  const renderedProjects = worksData.map((worksData, index) => {
-    return <Project key={index} project={worksData} />;
-  });
+  const [count, setCount] = useState(0);
+  const renderedProjects = <Project key={count} project={worksData[count]} />;
+  const noOfProjects = worksData.length;
 
+  const handleNextProject = () => {
+    setCount((count + 1) % noOfProjects);
+  };
+
+  const handlePrevProject = () => {
+    if (count - 1 < 0) setCount(noOfProjects - 1);
+    else setCount(count - 1);
+  };
   return (
-    <div className="relative">
+    <div className="relative grid grid-cols-1 grid-rows-[repeat(2,200px)_auto]">
       {renderedProjects}
-      <div className="absolute top-1/2 -left-[10px] z-[10]">
+      <div
+        className="absolute top-1/2 -left-[10px] z-[10] hover:animate-pulse"
+        onClick={handlePrevProject}
+      >
         {leftSlideIcon}
       </div>
-      <div className="absolute top-1/2 -right-[10px] z-[10]">
+      <div
+        className="absolute top-1/2 -right-[10px] z-[10] hover:animate-pulse"
+        onClick={handleNextProject}
+      >
         {rightSlideIcon}
       </div>
     </div>

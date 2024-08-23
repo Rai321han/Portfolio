@@ -5,14 +5,15 @@ import FadingLeft from "./FadingLeft";
 import FadingRight from "./FadingRight";
 
 const worksData: WorksDataType = [
-  //   {
-  //    projectTitle: "Modern Bank Landing Page",
-  //    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique dolore quis odio ipsum quibusdam except."
-  //     imageUrl: "/images/project1.png",
-  //     repoLink: "https://github.com/Rai321han/modern-bank-landing-page",
-  //     liveLink: "https://modern-bank-landing-page-roan.vercel.app",
-  //     techStacks: ["jsIcon", "tsIcon", "reactIcon", "tailwindIcon"],
-  //   },
+  {
+    projectTitle: "Modern Bank Landing Page",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique dolore quis odio ipsum quibusdam except.",
+    imageUrl: "/images/project1.png",
+    repoLink: "https://github.com/Rai321han/modern-bank-landing-page",
+    liveLink: "https://modern-bank-landing-page-roan.vercel.app",
+    techStacks: ["jsIcon", "reactIcon", "tsIcon", "tailwindIcon"],
+  },
   {
     projectTitle: "Multi Select React Component",
     description:
@@ -26,7 +27,7 @@ const worksData: WorksDataType = [
 
 export default function Works() {
   return (
-    <div className="relative flex flex-col gap-4 col-[1/14] row-[11/16] bg-primary p-[30px] rounded-[20px] border-y-2 border-borderColor">
+    <div className="relative flex flex-col gap-4 col-[1/14] row-[7/10] bg-primary p-[30px] rounded-[20px] border-y-2 border-borderColor">
       <SectionHead className="text-center">WORKS</SectionHead>
       <ProjectsSlide worksData={worksData} />
       <FadingLeft />

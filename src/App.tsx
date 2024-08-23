@@ -6,6 +6,7 @@ import Share from "./components/Share";
 import Social from "./components/Social";
 import Tech from "./components/Tech";
 import Works from "./components/Works";
+import "./App.css";
 
 function App() {
   return (

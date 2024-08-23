@@ -28,7 +28,7 @@ export default function Project({ project }: ProjectDataType) {
           src={imageUrl}
           alt="projectImage"
         />
-        <div className=" animate-ScaleYanimation origin-[0%_100%] rounded-b-[15px] flex flex-col gap-2 absolute bottom-[0%] p-pdSecSmall sm:p-pdSecLarge bg-primaryDim opacity-[0.8]">
+        <div className="backdrop-blur-sm animate-ScaleYanimation origin-[0%_100%] rounded-b-[15px] flex flex-col gap-2 absolute bottom-[0%] p-pdSecSmall sm:p-pdSecLarge bg-primaryDim">
           <h1 className="text-textColor text-[1.2rem] xs:text-[1.5rem] font-bold sm:max-w-[80%]">
             {projectTitle}
           </h1>

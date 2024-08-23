@@ -4,7 +4,7 @@ import { LINKEDIN_ICON, MAIL_ICON, GITHUB_ICON } from "./icons";
 import Section from "./Section";
 export default function Social() {
   return (
-    <Section className="col-[1/10] row-[6/7]  flex felx-row gap-2  [&>a]:flex-grow item-center justify-between">
+    <Section className=" col-[1/10] row-[6/7]  flex felx-row gap-2  [&>a]:flex-grow item-center justify-between">
       <a href="https://github.com/Rai321han" target="_blank">
         <Icon data={[GITHUB_ICON, "GitHub"]} />
       </a>

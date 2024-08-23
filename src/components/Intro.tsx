@@ -5,7 +5,7 @@ import Section from "./Section";
 
 export default function Intro() {
   return (
-    <Section className="flex gap-[20px] flex-col justify-center items-center col-[1/14]  row-[3/4] ">
+    <Section className=" flex gap-[20px] flex-col justify-center items-center col-[1/14]  row-[3/4] ">
       <div className="text-textColor flex flex-col justify-center items-center gap-4">
         <div className="text-4xl font-chaney text-center">
           RAIHAN

@@ -36,7 +36,7 @@ export default {
           "100%": { transform: "scale(100%)" },
         },
         ScaleYanimation: {
-          "0%": { transform: "scaleY(5%)" },
+          "0%": { transform: "scaleY(60%)" },
 
           "100%": { transform: "scaleY(100%)" },
         },

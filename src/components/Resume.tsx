@@ -1,26 +1,14 @@
 import FadingLeft from "./FadingLeft";
 import FadingRight from "./FadingRight";
+import Section from "./Section";
 import SectionHead from "./SectionHead";
 export default function Resume() {
   return (
-    <div className="flex flex-row justify-between items-center relative col-[1/14] p-[30px] row-[4/5] bg-primary border-y-[2px] border-borderColor rounded-[20px]">
-      <SectionHead className="text-[1.3rem]">RESUME</SectionHead>
+    <Section className="flex flex-row justify-between items-center col-[1/14] row-[4/5]">
+      <SectionHead>RESUME</SectionHead>
       <a href="/RAIHAN_RESUME.pdf" download="RAIHAN_RESUME.pdf">
         <div className="hover:bg-blue-500 cursor-pointer bg-primaryDim rounded-[20px] px-[20px] py-[10px] flex felx-row gap-4 items-center">
-          Download
-          {/* <a href="#">
-          <svg
-            width="28"
-            height="18"
-            viewBox="0 0 28 18"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="fill-iconColor hover:fill-blue-500"
-          >
-            <path d="M14 0C7.63636 0 2.20182 3.732 0 9C2.20182 14.268 7.63636 18 14 18C20.3636 18 25.7982 14.268 28 9C25.7982 3.732 20.3636 0 14 0ZM14 15C10.4873 15 7.63636 12.312 7.63636 9C7.63636 5.688 10.4873 3 14 3C17.5127 3 20.3636 5.688 20.3636 9C20.3636 12.312 17.5127 15 14 15ZM14 5.4C11.8873 5.4 10.1818 7.008 10.1818 9C10.1818 10.992 11.8873 12.6 14 12.6C16.1127 12.6 17.8182 10.992 17.8182 9C17.8182 7.008 16.1127 5.4 14 5.4Z" />
-          </svg>
-        </a>
-        <span className="text-textColorDim">|</span> */}
+          <span className="hidden xs:inline">Download</span>
           <svg
             width="28"
             height="18"
@@ -35,6 +23,6 @@ export default function Resume() {
       </a>
       <FadingLeft />
       <FadingRight />
-    </div>
+    </Section>
   );
 }

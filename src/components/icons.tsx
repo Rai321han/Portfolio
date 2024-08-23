@@ -1,4 +1,4 @@
-export const locationIcon = (
+const locationIcon = (
   <svg
     width="14"
     height="20"
@@ -10,7 +10,7 @@ export const locationIcon = (
   </svg>
 );
 
-export const cssIcon = (
+const cssIcon = (
   <svg
     width="30"
     height="30"
@@ -44,7 +44,7 @@ export const cssIcon = (
   </svg>
 );
 
-export const downloadIcon = (
+const downloadIcon = (
   <svg
     width="28"
     height="18"
@@ -56,7 +56,7 @@ export const downloadIcon = (
   </svg>
 );
 
-export const externalLinkIcon = (
+const externalLinkIcon = (
   <svg
     width="26"
     height="26"
@@ -69,7 +69,7 @@ export const externalLinkIcon = (
   </svg>
 );
 
-export const githubIcon = (
+const githubIcon = (
   <svg
     width="26"
     height="26"
@@ -82,7 +82,7 @@ export const githubIcon = (
   </svg>
 );
 
-export const htmlIcon = (
+const htmlIcon = (
   <svg
     width="30"
     height="30"
@@ -106,7 +106,7 @@ export const htmlIcon = (
   </svg>
 );
 
-export const jsIcon = (
+const jsIcon = (
   <svg
     width="32"
     height="32"
@@ -121,7 +121,7 @@ export const jsIcon = (
   </svg>
 );
 
-export const leftSlideIcon = (
+const leftSlideIcon = (
   <svg
     width="34"
     height="34"
@@ -137,7 +137,7 @@ export const leftSlideIcon = (
   </svg>
 );
 
-export const linkedinIcon = (
+const linkedinIcon = (
   <svg
     width="26"
     height="26"
@@ -150,7 +150,7 @@ export const linkedinIcon = (
   </svg>
 );
 
-export const mailIcon = (
+const mailIcon = (
   <svg
     width="26"
     height="26"
@@ -163,7 +163,7 @@ export const mailIcon = (
   </svg>
 );
 
-export const reactIcon = (
+const reactIcon = (
   <svg
     width="30"
     height="30"
@@ -180,7 +180,7 @@ export const reactIcon = (
   </svg>
 );
 
-export const rightSlideIcon = (
+const rightSlideIcon = (
   <svg
     width="34"
     height="34"
@@ -197,7 +197,7 @@ export const rightSlideIcon = (
   </svg>
 );
 
-export const shareIcon = (
+const shareIcon = (
   <svg
     width="26"
     height="26"
@@ -214,33 +214,33 @@ export const shareIcon = (
   </svg>
 );
 
-export const viewIcon = (
-  <svg
-    width="28"
-    height="18"
-    viewBox="0 0 28 18"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className="fill-iconColor group-hover:fill-blue-500"
-  >
-    <path d="M14 0C7.63636 0 2.20182 3.732 0 9C2.20182 14.268 7.63636 18 14 18C20.3636 18 25.7982 14.268 28 9C25.7982 3.732 20.3636 0 14 0ZM14 15C10.4873 15 7.63636 12.312 7.63636 9C7.63636 5.688 10.4873 3 14 3C17.5127 3 20.3636 5.688 20.3636 9C20.3636 12.312 17.5127 15 14 15ZM14 5.4C11.8873 5.4 10.1818 7.008 10.1818 9C10.1818 10.992 11.8873 12.6 14 12.6C16.1127 12.6 17.8182 10.992 17.8182 9C17.8182 7.008 16.1127 5.4 14 5.4Z" />
-  </svg>
-);
+// const viewIcon = (
+//   <svg
+//     width="28"
+//     height="18"
+//     viewBox="0 0 28 18"
+//     fill="none"
+//     xmlns="http://www.w3.org/2000/svg"
+//     className="fill-iconColor group-hover:fill-blue-500"
+//   >
+//     <path d="M14 0C7.63636 0 2.20182 3.732 0 9C2.20182 14.268 7.63636 18 14 18C20.3636 18 25.7982 14.268 28 9C25.7982 3.732 20.3636 0 14 0ZM14 15C10.4873 15 7.63636 12.312 7.63636 9C7.63636 5.688 10.4873 3 14 3C17.5127 3 20.3636 5.688 20.3636 9C20.3636 12.312 17.5127 15 14 15ZM14 5.4C11.8873 5.4 10.1818 7.008 10.1818 9C10.1818 10.992 11.8873 12.6 14 12.6C16.1127 12.6 17.8182 10.992 17.8182 9C17.8182 7.008 16.1127 5.4 14 5.4Z" />
+//   </svg>
+// );
 
-export const whatsAppIcon = (
-  <svg
-    width="21"
-    height="21"
-    viewBox="0 0 21 21"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className="fill-iconColor group-hover:fill-blue-500"
-  >
-    <path d="M20.6678 9.73136C20.3162 3.73358 14.8665 -0.888866 8.58946 0.14524C4.26688 0.858774 0.802624 4.36437 0.130455 8.68691C-0.262506 11.1894 0.254568 13.5576 1.38174 15.512L0.461379 18.9349C0.254558 19.7105 0.968071 20.4137 1.73331 20.1965L5.10451 19.2658C6.63499 20.1655 8.424 20.6825 10.3371 20.6825C16.1695 20.6825 21.0091 15.543 20.6678 9.73136ZM15.3939 14.1884C15.3008 14.3745 15.1871 14.5503 15.0423 14.7158C14.7838 14.995 14.5045 15.2018 14.1943 15.3259C13.8841 15.4603 13.5428 15.5224 13.1809 15.5224C12.6535 15.5224 12.0847 15.3984 11.4953 15.1398C10.8955 14.8813 10.3061 14.54 9.71663 14.116C9.11685 13.6816 8.55843 13.1956 8.0207 12.6682C7.48296 12.1305 7.00724 11.5617 6.57292 10.9723C6.14893 10.3828 5.8077 9.7934 5.55951 9.20396C5.31133 8.61452 5.18726 8.04582 5.18726 7.50808C5.18726 7.15647 5.24929 6.81522 5.37339 6.50499C5.49748 6.18441 5.69398 5.89487 5.97319 5.63635C6.3041 5.30543 6.66602 5.15032 7.04864 5.15032C7.1934 5.15032 7.33816 5.18133 7.47259 5.24338C7.60703 5.30542 7.73114 5.39849 7.82422 5.53293L9.02378 7.22885C9.11685 7.36328 9.18924 7.47704 9.2306 7.59079C9.28231 7.70454 9.30299 7.80795 9.30299 7.91136C9.30299 8.03545 9.26163 8.15957 9.18924 8.28361C9.11685 8.4077 9.02378 8.53179 8.89969 8.65589L8.50673 9.06953C8.44468 9.13158 8.424 9.19362 8.424 9.27635C8.424 9.31771 8.43434 9.35908 8.44468 9.40044C8.46536 9.44181 8.47571 9.47283 8.48605 9.50385C8.57912 9.67965 8.74457 9.89681 8.97208 10.1657C9.20992 10.4345 9.45811 10.7138 9.72697 10.9826C10.0062 11.2618 10.2751 11.51 10.5543 11.7479C10.8231 11.9754 11.0506 12.1305 11.2264 12.2236C11.2575 12.2339 11.2885 12.2546 11.3195 12.2649C11.3609 12.2856 11.4022 12.2856 11.4539 12.2856C11.547 12.2856 11.609 12.2546 11.6711 12.1925L12.0641 11.7996C12.1985 11.6651 12.3226 11.5721 12.4363 11.51C12.5604 11.4376 12.6742 11.3963 12.8086 11.3963C12.912 11.3963 13.0154 11.417 13.1292 11.4687C13.2429 11.5204 13.367 11.5824 13.4911 11.6755L15.2077 12.8957C15.3422 12.9888 15.4352 13.1025 15.4973 13.2266C15.549 13.3611 15.58 13.4852 15.58 13.6299C15.518 13.8057 15.4766 14.0022 15.3939 14.1884Z" />
-  </svg>
-);
+// const whatsAppIcon = (
+//   <svg
+//     width="21"
+//     height="21"
+//     viewBox="0 0 21 21"
+//     fill="none"
+//     xmlns="http://www.w3.org/2000/svg"
+//     className="fill-iconColor group-hover:fill-blue-500"
+//   >
+//     <path d="M20.6678 9.73136C20.3162 3.73358 14.8665 -0.888866 8.58946 0.14524C4.26688 0.858774 0.802624 4.36437 0.130455 8.68691C-0.262506 11.1894 0.254568 13.5576 1.38174 15.512L0.461379 18.9349C0.254558 19.7105 0.968071 20.4137 1.73331 20.1965L5.10451 19.2658C6.63499 20.1655 8.424 20.6825 10.3371 20.6825C16.1695 20.6825 21.0091 15.543 20.6678 9.73136ZM15.3939 14.1884C15.3008 14.3745 15.1871 14.5503 15.0423 14.7158C14.7838 14.995 14.5045 15.2018 14.1943 15.3259C13.8841 15.4603 13.5428 15.5224 13.1809 15.5224C12.6535 15.5224 12.0847 15.3984 11.4953 15.1398C10.8955 14.8813 10.3061 14.54 9.71663 14.116C9.11685 13.6816 8.55843 13.1956 8.0207 12.6682C7.48296 12.1305 7.00724 11.5617 6.57292 10.9723C6.14893 10.3828 5.8077 9.7934 5.55951 9.20396C5.31133 8.61452 5.18726 8.04582 5.18726 7.50808C5.18726 7.15647 5.24929 6.81522 5.37339 6.50499C5.49748 6.18441 5.69398 5.89487 5.97319 5.63635C6.3041 5.30543 6.66602 5.15032 7.04864 5.15032C7.1934 5.15032 7.33816 5.18133 7.47259 5.24338C7.60703 5.30542 7.73114 5.39849 7.82422 5.53293L9.02378 7.22885C9.11685 7.36328 9.18924 7.47704 9.2306 7.59079C9.28231 7.70454 9.30299 7.80795 9.30299 7.91136C9.30299 8.03545 9.26163 8.15957 9.18924 8.28361C9.11685 8.4077 9.02378 8.53179 8.89969 8.65589L8.50673 9.06953C8.44468 9.13158 8.424 9.19362 8.424 9.27635C8.424 9.31771 8.43434 9.35908 8.44468 9.40044C8.46536 9.44181 8.47571 9.47283 8.48605 9.50385C8.57912 9.67965 8.74457 9.89681 8.97208 10.1657C9.20992 10.4345 9.45811 10.7138 9.72697 10.9826C10.0062 11.2618 10.2751 11.51 10.5543 11.7479C10.8231 11.9754 11.0506 12.1305 11.2264 12.2236C11.2575 12.2339 11.2885 12.2546 11.3195 12.2649C11.3609 12.2856 11.4022 12.2856 11.4539 12.2856C11.547 12.2856 11.609 12.2546 11.6711 12.1925L12.0641 11.7996C12.1985 11.6651 12.3226 11.5721 12.4363 11.51C12.5604 11.4376 12.6742 11.3963 12.8086 11.3963C12.912 11.3963 13.0154 11.417 13.1292 11.4687C13.2429 11.5204 13.367 11.5824 13.4911 11.6755L15.2077 12.8957C15.3422 12.9888 15.4352 13.1025 15.4973 13.2266C15.549 13.3611 15.58 13.4852 15.58 13.6299C15.518 13.8057 15.4766 14.0022 15.3939 14.1884Z" />
+//   </svg>
+// );
 
-export const jestIcon = (
+const jestIcon = (
   <svg
     width="29"
     height="32"
@@ -259,7 +259,7 @@ export const jestIcon = (
   </svg>
 );
 
-export const reduxIcon = (
+const reduxIcon = (
   <svg
     width="32"
     height="31"
@@ -274,7 +274,7 @@ export const reduxIcon = (
   </svg>
 );
 
-export const tailwindIcon = (
+const tailwindIcon = (
   <svg
     width="30"
     height="18"
@@ -289,7 +289,7 @@ export const tailwindIcon = (
   </svg>
 );
 
-export const tsIcon = (
+const tsIcon = (
   <svg
     width="32"
     height="32"
@@ -305,7 +305,7 @@ export const tsIcon = (
   </svg>
 );
 
-export const figmaIcon = (
+const figmaIcon = (
   <svg
     width="22"
     height="32"
@@ -335,3 +335,22 @@ export const figmaIcon = (
     />
   </svg>
 );
+
+export const JS_ICON = jsIcon;
+export const REACT_ICON = reactIcon;
+export const TS_ICON = tsIcon;
+export const CSS_ICON = cssIcon;
+export const HTML_ICON = htmlIcon;
+export const TAILWIND_ICON = tailwindIcon;
+export const JEST_ICON = jestIcon;
+export const REDUX_ICON = reduxIcon;
+export const FIGMA_ICON = figmaIcon;
+export const GITHUB_ICON = githubIcon;
+export const LINKEDIN_ICON = linkedinIcon;
+export const MAIL_ICON = mailIcon;
+export const EXTERNAL_ICON = externalLinkIcon;
+export const DOWNLOAD_ICON = downloadIcon;
+export const SHARE_ICON = shareIcon;
+export const LSLIDE_ICON = leftSlideIcon;
+export const RSLIDE_ICON = rightSlideIcon;
+export const LOCATION_ICON = locationIcon;

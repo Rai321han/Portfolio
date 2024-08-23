@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { WorksDataType } from "../types";
 import Project from "./Project";
-import { leftSlideIcon, rightSlideIcon } from "./icons";
+import { RSLIDE_ICON, LSLIDE_ICON } from "./icons";
 
 type ProjectSlideDataType = {
   worksData: WorksDataType;
@@ -27,13 +27,13 @@ export default function ProjectsSlide({ worksData }: ProjectSlideDataType) {
         className="absolute top-1/2 -left-[10px] z-[10] hover:animate-pulse"
         onClick={handlePrevProject}
       >
-        {leftSlideIcon}
+        {LSLIDE_ICON}
       </div>
       <div
         className="absolute top-1/2 -right-[10px] z-[10] hover:animate-pulse"
         onClick={handleNextProject}
       >
-        {rightSlideIcon}
+        {RSLIDE_ICON}
       </div>
     </div>
   );

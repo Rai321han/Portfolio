@@ -3,6 +3,22 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      spacing: {
+        pdSecLarge: "var(--padding-section-lg)",
+        pdSecMedium: "var(--padding-section-md)",
+        pdSecSmall: "var(--padding-section-sm)",
+
+        pdIconLarge: "var(--padding-icon-lg)",
+        pdIconSmall: "var(--padding-icon-sm)",
+      },
+
+      screens: {
+        lg: "1024px",
+        md: "800px",
+        sm: "500px",
+        xs: "400px",
+        xxs: "350px",
+      },
       animation: {
         marquee: "marquee 20s linear infinite",
         imageChangeAnimation: "imageChangeAnimation 300ms ease-out",

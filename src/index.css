@@ -10,6 +10,17 @@
   }
 }
 
+:root {
+  --padding-section-lg: 30px;
+  --padding-section-md: 25px;
+  --padding-section-sm: 20px;
+
+  --padding-icon-lg: 10px
+  --padding-icon-sm: 5px
+
+}
+
+
 .light {
   --background: #ffffff;
   --primary: #f3f3f3;

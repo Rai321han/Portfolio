@@ -3,6 +3,7 @@ import { WorksDataType } from "../types";
 import ProjectsSlide from "./ProjectsSlide";
 import FadingLeft from "./FadingLeft";
 import FadingRight from "./FadingRight";
+import Section from "./Section";
 
 const worksData: WorksDataType = [
   {
@@ -12,7 +13,7 @@ const worksData: WorksDataType = [
     imageUrl: "/images/project1.png",
     repoLink: "https://github.com/Rai321han/modern-bank-landing-page",
     liveLink: "https://modern-bank-landing-page-roan.vercel.app",
-    techStacks: ["jsIcon", "reactIcon", "tsIcon", "tailwindIcon"],
+    techStacks: ["react", "css", "tailwind", "ts"],
   },
   {
     projectTitle: "Multi Select React Component",
@@ -21,17 +22,17 @@ const worksData: WorksDataType = [
     imageUrl: "/images/project2.png",
     repoLink: "https://github.com/Rai321han/multi-select-component",
     liveLink: "https://multi-select-component-brown.vercel.app",
-    techStacks: ["jsIcon", "tsIcon", "reactIcon", "tailwindIcon"],
+    techStacks: ["tailwind", "react", "ts"],
   },
 ];
 
 export default function Works() {
   return (
-    <div className="relative flex flex-col gap-4 col-[1/14] row-[7/10] bg-primary p-[30px] rounded-[20px] border-y-2 border-borderColor">
+    <Section className="flex flex-col gap-4 col-[1/14] row-[7/10]">
       <SectionHead className="text-center">WORKS</SectionHead>
       <ProjectsSlide worksData={worksData} />
       <FadingLeft />
       <FadingRight />
-    </div>
+    </Section>
   );
 }

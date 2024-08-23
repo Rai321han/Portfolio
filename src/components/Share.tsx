@@ -1,12 +1,13 @@
-import { shareIcon } from "./icons";
+import { SHARE_ICON } from "./icons";
 import Icon from "./Icon";
 import FadingRight from "./FadingRight";
+import Section from "./Section";
 
 export default function Share() {
   return (
-    <div className="relative col-[10/14] row-[6/7] bg-primary p-[30px] rounded-[20px] border-y-2 border-borderColor">
-      <Icon data={[shareIcon, "Share this protfolio"]} />
+    <Section className="col-[10/14] row-[6/7]">
+      <Icon data={[SHARE_ICON, "Share this protfolio"]} />
       <FadingRight />
-    </div>
+    </Section>
   );
 }

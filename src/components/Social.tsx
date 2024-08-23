@@ -1,35 +1,27 @@
 import FadingLeft from "./FadingLeft";
 import Icon from "./Icon";
-import { linkedinIcon, mailIcon, githubIcon } from "./icons";
-
+import { LINKEDIN_ICON, MAIL_ICON, GITHUB_ICON } from "./icons";
+import Section from "./Section";
 export default function Social() {
   return (
-    <div className="relative col-[1/10] row-[6/7] ">
-      <div className="flex felx-row gap-2  bg-primary p-[30px] rounded-[20px] border-y-2 border-borderColor">
-        <a
-          href="https://github.com/Rai321han"
-          target="_blank"
-          className="flex-grow"
-        >
-          <Icon data={[githubIcon, "GitHub"]} />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/raihan-uddin-6681411b2"
-          target="_blank"
-          className="flex-grow"
-        >
-          <Icon data={[linkedinIcon, "LinkedIn"]} />
-        </a>
-        <a
-          href="mailto:uddinraihan797@gmail.com?subject=Please%20add%20a%20subject%20line!"
-          className="flex-grow"
-          target="_blank"
-        >
-          <Icon data={[mailIcon, "Mail"]} />
-        </a>
-        {/* <Icon data={[whatsAppIcon, "WhatsApp"]} /> */}
-      </div>
+    <Section className="col-[1/10] row-[6/7]  flex felx-row gap-2  [&>a]:flex-grow item-center justify-between">
+      <a href="https://github.com/Rai321han" target="_blank">
+        <Icon data={[GITHUB_ICON, "GitHub"]} />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/raihan-uddin-6681411b2"
+        target="_blank"
+      >
+        <Icon data={[LINKEDIN_ICON, "LinkedIn"]} />
+      </a>
+      <a
+        href="mailto:uddinraihan797@gmail.com?subject=Please%20add%20a%20subject%20line!"
+        target="_blank"
+      >
+        <Icon data={[MAIL_ICON, "Mail"]} />
+      </a>
+
       <FadingLeft />
-    </div>
+    </Section>
   );
 }

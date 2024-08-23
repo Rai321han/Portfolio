@@ -13,7 +13,7 @@ export default function SectionHead({
   return (
     <div
       className={twMerge(
-        "tracking-widest text-textColor font-chaney",
+        "tracking-widest text-textColor font-chaney text-[15px] xs:text-[20px]",
         className
       )}
       {...rest}

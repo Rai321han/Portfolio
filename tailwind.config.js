@@ -23,6 +23,7 @@ export default {
         marquee: "marquee 20s linear infinite",
         imageChangeAnimation: "imageChangeAnimation 300ms ease-out",
         ScaleYanimation: "ScaleYanimation 300ms ease-in",
+        ScaleXanimation: "ScaleXanimation 300ms ease-in-out",
       },
       keyframes: {
         marquee: {
@@ -38,6 +39,12 @@ export default {
           "0%": { transform: "scaleY(5%)" },
 
           "100%": { transform: "scaleY(100%)" },
+        },
+
+        ScaleXanimation: {
+          "0%": { transform: "scaleX(0%)" },
+
+          "100%": { transform: "scaleX(100%)" },
         },
       },
 

@@ -8,7 +8,7 @@ export default function StackTag({ stacks }: { stacks: JSX.Element[] }) {
   return (
     <div
       key={"stackTag"}
-      className="flex items-center flex-row gap-3 flex-wrap p-[8px] xs:p-[15px] bg-primaryDim rounded-[15px]"
+      className="animate-ScaleXanimation origin-left flex items-center flex-row gap-3 flex-wrap p-[8px] xs:p-[15px] bg-primaryDim rounded-[15px]"
     >
       {renderedStack}
     </div>

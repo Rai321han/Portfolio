@@ -1,9 +1,5 @@
-import SectionHead from "./SectionHead";
+import ProjectsShow from "./ProjectsShow";
 import { WorksDataType } from "../types";
-import ProjectsSlide from "./ProjectsSlide";
-import FadingLeft from "./FadingLeft";
-import FadingRight from "./FadingRight";
-import Section from "./Section";
 
 const worksData: WorksDataType = [
   {
@@ -26,13 +22,17 @@ const worksData: WorksDataType = [
   },
 ];
 
-export default function Works() {
+export default function MyProjects() {
   return (
-    <Section className="  flex flex-col gap-4 col-[1/14] md:col-[1/11] row-[10/13] md:row-[9/13]">
-      <SectionHead className="text-center">projects</SectionHead>
-      <ProjectsSlide worksData={worksData} />
-      <FadingLeft />
-      <FadingRight />
-    </Section>
+    <div className="flex flex-col col-[1/14] gap-2 md:gap-3 md:col-[1/11] row-[10/11] md:row-[8/9]">
+      <div className="grid grid-cols-1 md:grid-cols-[repeat(2,1fr)] gap-2 md:gap-3">
+        <ProjectsShow project={worksData[0]} />
+        <ProjectsShow project={worksData[1]} />
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-[repeat(2,1fr)] gap-2 md:gap-3">
+        <ProjectsShow project={worksData[0]} />
+        <ProjectsShow project={worksData[1]} />
+      </div>
+    </div>
   );
 }

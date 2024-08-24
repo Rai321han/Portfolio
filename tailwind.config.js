@@ -24,6 +24,7 @@ export default {
         imageChangeAnimation: "imageChangeAnimation 300ms ease-out",
         ScaleYanimation: "ScaleYanimation 300ms ease-in",
         ScaleXanimation: "ScaleXanimation 300ms ease-in-out",
+        ScaleXanimationReverse: "ScaleXanimationReverse 300ms ease-in-out",
       },
       keyframes: {
         marquee: {
@@ -41,10 +42,26 @@ export default {
           "100%": { transform: "scaleY(100%)" },
         },
 
-        ScaleXanimation: {
-          "0%": { transform: "scaleX(0%)" },
+        // ScaleXanimation: {
+        //   "0%": { transform: "scaleX(0%)" },
 
-          "100%": { transform: "scaleX(100%)" },
+        //   "100%": { transform: "scaleX(100%)" },
+        // },
+
+        ScaleXanimationReverse: {
+          "0%": { transform: "translateX(100%)", opacity: 0 },
+
+          "70%": { transform: "translateX(50%)", opacity: 0.2 },
+
+          "100%": { transform: "translateX(0%)", opacity: 1 },
+        },
+
+        ScaleXanimation: {
+          "0%": { transform: "translateX(-100%)", opacity: 0 },
+
+          "50%": { transform: "translateX(-50%)", opacity: 0.2 },
+
+          "100%": { transform: "translateX(0%)", opacity: 1 },
         },
       },
 

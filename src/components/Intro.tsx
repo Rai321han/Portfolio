@@ -13,11 +13,11 @@ export default function Intro() {
             <br />
             &nbsp; Uddin
           </div>
-          <div className="font-prosto tracking-widest text-textColorDim text-xs">
+          <div className="font-prosto tracking-widest text-textColorDim text-[14px]">
             FRONTEND DEVELOPER
           </div>
         </div>
-        <div className="text-justify leading-6 text-[16px] lg:col-[2/4] lg:pl-2">
+        <div className="text-justify leading-6 text-[16px] lg:text-[20px] lg:leading-7 lg:col-[2/4] lg:pl-2">
           I love solving problems and making websites that are user-friendly and
           can scale up smoothly. Right now, I'm wrapping up my Bachelor's in
           Information and Communication Engineering at Noakhali Science and

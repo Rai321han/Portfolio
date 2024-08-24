@@ -24,7 +24,7 @@ export default function ProjectsSlide({ worksData }: ProjectSlideDataType) {
     <div className="relative grid grid-cols-1 grid-rows-[repeat(2,200px)_auto]">
       {renderedProjects}
       <div
-        className="absolute top-1/2 -translate-y-1/2 -left-[10px] z-[10] hover:animate-pulse [&>svg]:w-[60px] [&>svg]:h-[60px]"
+        className="absolute top-1/2 -translate-y-1/2 md:translate-l-1/2 -left-[10px] z-[10] hover:animate-pulse [&>svg]:w-[60px] [&>svg]:h-[60px]"
         onClick={handlePrevProject}
       >
         {LSLIDE_ICON}

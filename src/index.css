@@ -37,10 +37,12 @@
 
 .dark {
   --background: #0f0f0f;
-  --primary: #2d2d2d;
+  /* --primary: #2d2d2d; */
+  --primary: #18181a;
   --primary-grad-1: #2f323a;
   --primary-grad-2: #212226;
-  --primary-dim: #0f0f0f;
+  /* --primary-dim: #0f0f0f; */
+  --primary-dim: #000;
   --secondary: #f3f3f3;
   --secondary-dim: #dedede;
   --text-color: #f3f3f3;

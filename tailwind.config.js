@@ -69,6 +69,7 @@ export default {
         prosto: "'Prosto One', sans-serif",
         chaney: "'chaney', sans-serif",
         clicker: "'Clicker Script', cursive",
+        Inter: "'Inter', sans-serif",
       },
       colors: {
         background: "var(--background)",

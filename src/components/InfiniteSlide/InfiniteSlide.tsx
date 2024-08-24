@@ -32,19 +32,19 @@ export default function InfiniteSlide({
   return (
     <div
       className={twMerge(
-        `[mask-image:radial-gradient(circle,#000_0%,transparent_100%)] overflow-hidden flex items-center`,
+        `[justify-between mask-image:radial-gradient(circle,#000_0%,transparent_100%)] overflow-hidden flex items-center`,
         className
       )}
       {...rest}
     >
       <div
-        className={`[&>*]:mx-2 flex flex-row ${animationClass1} whitespace-nowrap`}
+        className={`justify-between [&>*]:mx-2 flex flex-row ${animationClass1} whitespace-nowrap`}
         style={aniamtionStyle1}
       >
         {items}
       </div>
       <div
-        className={`[&>*]:mx-2 flex flex-row ${animationClass2} whitespace-nowrap`}
+        className={`justify-between [&>*]:mx-2 flex flex-row ${animationClass2} whitespace-nowrap`}
         style={aniamtionStyle2}
       >
         {items}

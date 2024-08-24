@@ -25,6 +25,7 @@ export default {
         ScaleYanimation: "ScaleYanimation 300ms ease-in",
         ScaleXanimation: "ScaleXanimation 300ms ease-in-out",
         ScaleXanimationReverse: "ScaleXanimationReverse 300ms ease-in-out",
+        moveShade: "moveShade 10s linear infinite",
       },
       keyframes: {
         marquee: {
@@ -41,12 +42,28 @@ export default {
 
           "100%": { transform: "scaleY(100%)" },
         },
-
-        // ScaleXanimation: {
-        //   "0%": { transform: "scaleX(0%)" },
-
-        //   "100%": { transform: "scaleX(100%)" },
-        // },
+        moveShade: {
+          "0%": {
+            top: "50",
+            left: "0%",
+          },
+          "25%": {
+            top: "0%",
+            left: "50%",
+          },
+          "50%": {
+            top: "50%",
+            left: "100%",
+          },
+          "75%": {
+            top: "100%",
+            left: "50%",
+          },
+          "100%": {
+            top: "50%",
+            left: "0%",
+          },
+        },
 
         ScaleXanimationReverse: {
           "0%": { transform: "translateX(100%)", opacity: 0 },

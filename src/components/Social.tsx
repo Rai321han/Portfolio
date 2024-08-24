@@ -3,7 +3,7 @@ import { LINKEDIN_ICON, MAIL_ICON, GITHUB_ICON, SHARE_ICON } from "./icons";
 import Section from "./Section";
 export default function Social() {
   return (
-    <div className="col-[1/14] md:col-[7/11] row-[6/7] md:row-[4/5]  flex flex-row flex-wrap gap-2  [&>a]:flex-grow item-center justify-between">
+    <div className=" col-[1/14] md:col-[7/11] row-[6/7] md:row-[4/5]  flex flex-row flex-wrap gap-2  [&>a]:flex-grow item-center justify-between">
       <div className="flex flex-row flex-grow gap-2">
         <Section className="flex-grow">
           <a href="https://github.com/Rai321han" target="_blank">

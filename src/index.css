@@ -52,3 +52,24 @@
   --border-color: #616267;
   --fadingColor: #201f1f;
 }
+
+.blockToAnimate {
+  animation : appear linear;
+  animation-timing-function: ease-in;
+  animation-timeline: view();
+  animation-range: entry 0 cover 20%;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+    /* transform: translateX(-100%); */
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+    /* transform: translateX(0); */
+  }
+}

@@ -24,13 +24,13 @@ export default function ProjectsSlide({ worksData }: ProjectSlideDataType) {
     <div className="relative grid grid-cols-1 grid-rows-[repeat(2,200px)_auto]">
       {renderedProjects}
       <div
-        className="absolute top-1/2 -left-[10px] z-[10] hover:animate-pulse"
+        className="absolute top-1/2 -translate-y-1/2 -left-[10px] z-[10] hover:animate-pulse [&>svg]:w-[60px] [&>svg]:h-[60px]"
         onClick={handlePrevProject}
       >
         {LSLIDE_ICON}
       </div>
       <div
-        className="absolute top-1/2 -right-[10px] z-[10] hover:animate-pulse"
+        className="absolute top-1/2 -translate-y-1/2 -right-[10px] z-[10] hover:animate-pulse [&>svg]:w-[60px] [&>svg]:h-[60px] "
         onClick={handleNextProject}
       >
         {RSLIDE_ICON}

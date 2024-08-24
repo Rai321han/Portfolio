@@ -17,7 +17,7 @@ export default function HeaderMarquee() {
   ));
 
   return (
-    <Section className="col-[1/14] md:col-[1/11] row-[2/3] overflow-x-hidden  md:py-[8px] lg:py-[8px] text-[12px] text-textColor">
+    <Section className="col-[1/14] md:col-[1/11] row-[2/3] overflow-x-hidden !py-[4px] lg:!py-[10px] text-[12px] text-textColor">
       <InfiniteSlide items={items} time={40} className="w-[100%]" />
       <FadingLeft />
       <FadingRight />

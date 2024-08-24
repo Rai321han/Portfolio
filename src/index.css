@@ -32,18 +32,21 @@
   --text-color: #155263;
   --text-color-dim: #8eabb4;
   --icon-color: #155263;
-  --border-color: #dedede;
+  --border-color: #dedede; 
 }
 
 .dark {
   --background: #0f0f0f;
   --primary: #2d2d2d;
+  --primary-grad-1: #2f323a;
+  --primary-grad-2: #212226;
   --primary-dim: #0f0f0f;
   --secondary: #f3f3f3;
   --secondary-dim: #dedede;
   --text-color: #f3f3f3;
   --text-color-dim: #8b8b8b;
   --icon-color: #f3f3f3;
-  --border-color: #5a5a5a;
+  /* --border-color: #5a5a5a; */
+  --border-color: #616267;
   --fadingColor: #201f1f;
 }

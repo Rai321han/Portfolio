@@ -4,11 +4,11 @@ import Section from "./Section";
 import SectionHead from "./SectionHead";
 export default function Resume() {
   return (
-    <Section className="flex flex-row justify-between items-center col-[1/14] row-[4/5]">
+    <Section className="flex flex-row justify-between items-center col-[1/14] md:col-[7/11] row-[4/5] md:row-[5/6]">
       <SectionHead>RESUME</SectionHead>
       <a href="/RAIHAN_RESUME.pdf" download="RAIHAN_RESUME.pdf">
         <div className="hover:bg-blue-500 cursor-pointer bg-primaryDim rounded-[20px] px-[20px] py-[10px] flex felx-row gap-4 items-center">
-          <span className="hidden xs:inline">Download</span>
+          <span className="hidden sm:inline md:hidden lg:inline">Download</span>
           <svg
             width="28"
             height="18"

@@ -1,6 +1,7 @@
 import FadingLeft from "./FadingLeft";
 import FadingRight from "./FadingRight";
 import InfiniteSlide from "./InfiniteSlide/InfiniteSlide";
+import Section from "./Section";
 
 export default function HeaderMarquee() {
   const data = (
@@ -16,10 +17,10 @@ export default function HeaderMarquee() {
   ));
 
   return (
-    <div className="relative col-[1/14] row-[2/3] bg-primary rounded-[20px]  border-y-[0.5px] border-borderColor overflow-x-hidden  py-[8px] text-[12px] tracking-wide text-textColor">
-      <InfiniteSlide items={items} time={50} className="w-[100%]" />
+    <Section className="col-[1/14] md:col-[1/11] row-[2/3] overflow-x-hidden  md:py-[8px] lg:py-[8px] text-[12px] text-textColor">
+      <InfiniteSlide items={items} time={40} className="w-[100%]" />
       <FadingLeft />
       <FadingRight />
-    </div>
+    </Section>
   );
 }

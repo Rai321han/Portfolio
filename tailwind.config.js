@@ -13,8 +13,8 @@ export default {
       },
 
       screens: {
-        lg: "1024px",
-        md: "800px",
+        lg: "1220px",
+        md: "720px",
         sm: "500px",
         xs: "400px",
         xxs: "350px",
@@ -51,10 +51,13 @@ export default {
       fontFamily: {
         prosto: "'Prosto One', sans-serif",
         chaney: "'chaney', sans-serif",
+        clicker: "'Clicker Script', cursive",
       },
       colors: {
         background: "var(--background)",
         primary: "var(--primary)",
+        grad1: "var(--primary-grad-1)",
+        grad2: "var(--primary-grad-2)",
         primaryDim: "var(--primary-dim)",
         secondary: "var(--secondary)",
         secondaryDim: "var(--secondary-dim)",

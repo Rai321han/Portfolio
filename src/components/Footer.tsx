@@ -4,7 +4,7 @@ import Section from "./Section";
 
 export default function Footer() {
   return (
-    <Section className="col-[1/14] row-[10/11]">
+    <Section className="col-[1/14] md:col-[1/11] row-[10/11] md:row-[10/11]">
       <p className="text-textColorDim text-center text-[0.8rem]">
         All Rights Reserved By Raihan Uddin@2024
       </p>

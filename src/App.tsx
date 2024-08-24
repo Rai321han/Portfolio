@@ -9,7 +9,7 @@ import Location from "./components/Location";
 import Education from "./components/Education";
 import ProjectIntro from "./components/ProjectIntro";
 import MyProjects from "./components/MyProjects";
-import Contact from "./components/contact";
+import Contact from "./components/Contact";
 
 function App() {
   return (

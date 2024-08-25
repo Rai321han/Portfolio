@@ -28,7 +28,7 @@ export default function Tech() {
     [FIGMA_ICON, "Figma"],
   ];
   const items = data.map((icon, index) => (
-    <li className="flex items-center justify-center">
+    <li className="flex items-center justify-center" key={index}>
       <Icon key={`${icon[0]} + ${index}`} data={icon} />
     </li>
   ));

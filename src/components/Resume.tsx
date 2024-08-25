@@ -1,5 +1,3 @@
-import FadingLeft from "./FadingLeft";
-import FadingRight from "./FadingRight";
 import Light from "./Light";
 import Section from "./Section";
 import SectionHead from "./SectionHead";
@@ -9,7 +7,7 @@ export default function Resume() {
       <Light />
       <SectionHead>resume</SectionHead>
       <a href="/RAIHAN_RESUME.pdf" download="RAIHAN_RESUME.pdf">
-        <div className="hover:bg-blue-500 cursor-pointer bg-primaryDim rounded-[20px] px-[20px] py-[10px] flex felx-row gap-4 items-center">
+        <div className="hover:bg-orange-500 cursor-pointer bg-primaryDim rounded-[20px] px-[20px] py-[10px] flex felx-row gap-4 items-center">
           <span className="hidden sm:inline md:hidden lg:inline font-Inter">
             download
           </span>
@@ -25,8 +23,6 @@ export default function Resume() {
           </svg>
         </div>
       </a>
-      <FadingLeft />
-      <FadingRight />
     </Section>
   );
 }

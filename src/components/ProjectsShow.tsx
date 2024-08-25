@@ -1,11 +1,13 @@
 import { EXTERNAL_ICON } from "./icons";
 import Section from "./Section";
 import { WorkDataType } from "../types";
+import Light from "./Light";
 
 export default function ProjectsShow({ project }: { project: WorkDataType }) {
   const { projectTitle, description, imageUrl } = project;
   return (
-    <Section className="grid grid-cols-1 grid-rows-[350px_repeat(2,auto)] gap-4">
+    <Section className="group grid grid-cols-1 grid-rows-[350px_repeat(2,auto)] gap-4">
+      <Light />
       <div className="row-[1/2] rounded-[20px] overflow-hidden">
         <img className="object-cover w-full h-full" src={imageUrl} alt="" />
       </div>

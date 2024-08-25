@@ -1,5 +1,3 @@
-import FadingLeft from "./FadingLeft";
-import FadingRight from "./FadingRight";
 import Section from "./Section";
 
 export default function Footer() {
@@ -8,8 +6,6 @@ export default function Footer() {
       <p className="text-textColorDim text-center text-[0.8rem] md:text-[1rem]">
         All Rights Reserved By Raihan Uddin@2024
       </p>
-      <FadingLeft />
-      <FadingRight />
     </Section>
   );
 }

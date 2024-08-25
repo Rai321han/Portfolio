@@ -1,5 +1,3 @@
-import FadingLeft from "./FadingLeft";
-import FadingRight from "./FadingRight";
 import Section from "./Section";
 
 export default function Intro() {
@@ -19,9 +17,6 @@ export default function Intro() {
           <br /> For A While ...
         </div>
       </div>
-
-      <FadingLeft />
-      <FadingRight />
     </Section>
   );
 }

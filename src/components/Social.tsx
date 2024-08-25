@@ -9,12 +9,16 @@ export default function Social() {
         <a
           href="https://github.com/Rai321han"
           target="_blank"
-          className="flex-grow group"
+          className="flex-grow group hover:[&>div>div>div>svg]:fill-orange-500"
         >
           <Section>
             <Light />
 
-            <Icon data={[GITHUB_ICON, "GitHub"]} />
+            <Icon
+              data={[GITHUB_ICON, "GitHub"]}
+              onHoverColorChange={true}
+              onHoverScale={true}
+            />
           </Section>
         </a>
         <a
@@ -24,7 +28,11 @@ export default function Social() {
         >
           <Section>
             <Light />
-            <Icon data={[LINKEDIN_ICON, "LinkedIn"]} />
+            <Icon
+              data={[LINKEDIN_ICON, "LinkedIn"]}
+              onHoverColorChange={true}
+              onHoverScale={true}
+            />
           </Section>
         </a>
       </div>
@@ -36,12 +44,20 @@ export default function Social() {
         >
           <Section>
             <Light />
-            <Icon data={[MAIL_ICON, "Mail"]} />
+            <Icon
+              data={[MAIL_ICON, "Mail"]}
+              onHoverColorChange={true}
+              onHoverScale={true}
+            />
           </Section>
         </a>
         <Section className="group flex-grow">
           <Light />
-          <Icon data={[SHARE_ICON, "Share this protfolio"]} />
+          <Icon
+            data={[SHARE_ICON, "Share this protfolio"]}
+            onHoverColorChange={true}
+            onHoverScale={true}
+          />
         </Section>
       </div>
     </div>

@@ -9,7 +9,7 @@ export default function Section({ children, className, ...rest }: SectionType) {
   return (
     <div
       className={twMerge(
-        `blockToAnimate relative p-pdSecSmall xxs:p-pdSecMedium xs:p-pdSecLarge md:p-pdSecMedium lg:p-pdSecLarge bg-primary rounded-[20px]`,
+        `overflow-hidden  blockToAnimate relative p-pdSecSmall xxs:p-pdSecMedium xs:p-pdSecLarge md:p-pdSecMedium lg:p-pdSecLarge bg-primary rounded-[20px]`,
         className
       )}
       {...rest}

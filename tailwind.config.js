@@ -1,4 +1,9 @@
 /** @type {import('tailwindcss').Config} */
+
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
+
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -20,14 +25,22 @@ export default {
         xxs: "350px",
       },
       animation: {
+        scroll:
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
         marquee: "marquee 20s linear infinite",
         imageChangeAnimation: "imageChangeAnimation 300ms ease-out",
         ScaleYanimation: "ScaleYanimation 300ms ease-in",
         ScaleXanimation: "ScaleXanimation 300ms ease-in-out",
         ScaleXanimationReverse: "ScaleXanimationReverse 300ms ease-in-out",
         moveShade: "moveShade 10s linear infinite",
+        aurora: "aurora 60s linear infinite",
       },
       keyframes: {
+        scroll: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
+          },
+        },
         marquee: {
           "0%": { transform: "translateX(0%)" },
           "100%": { transform: "translateX(-100%)" },
@@ -80,6 +93,14 @@ export default {
 
           "100%": { transform: "translateX(0%)", opacity: 1 },
         },
+        aurora: {
+          from: {
+            backgroundPosition: "50% 50%, 50% 50%",
+          },
+          to: {
+            backgroundPosition: "350% 50%, 350% 50%",
+          },
+        },
       },
 
       fontFamily: {
@@ -104,5 +125,17 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [addVariablesForColors],
 };
+
+// This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
+function addVariablesForColors({ addBase, theme }) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+
+  addBase({
+    ":root": newVars,
+  });
+}

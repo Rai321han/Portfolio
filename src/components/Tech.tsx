@@ -1,5 +1,3 @@
-import FadingLeft from "./FadingLeft";
-import FadingRight from "./FadingRight";
 import SectionHead from "./SectionHead";
 import {
   JS_ICON,
@@ -13,8 +11,9 @@ import {
   FIGMA_ICON,
 } from "./icons";
 import Icon from "./Icon";
-import InfiniteSlide from "./InfiniteSlide/InfiniteSlide";
 import Section from "./Section";
+import Light from "./Light";
+import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 
 export default function Tech() {
   const data: [JSX.Element, string][] = [
@@ -29,15 +28,16 @@ export default function Tech() {
     [FIGMA_ICON, "Figma"],
   ];
   const items = data.map((icon, index) => (
-    <Icon key={`${icon[0]} + ${index}`} data={icon} />
+    <li className="flex items-center justify-center">
+      <Icon key={`${icon[0]} + ${index}`} data={icon} />
+    </li>
   ));
 
   return (
-    <Section className=" flex flex-col gap-4 items-center col-[1/14] md:col-[7/11] row-[5/6] md:row-[3/4] bg-primary rounded-[20px] p-[30px]">
+    <Section className="group flex flex-col gap-4 items-center col-[1/14] md:col-[7/11] row-[5/6] md:row-[3/4] bg-primary rounded-[20px] p-[30px]">
+      <Light />
       <SectionHead>tech</SectionHead>
-      <InfiniteSlide items={items} time={30} className="w-[100%] py-[5px] " />
-      <FadingLeft />
-      <FadingRight />
+      <InfiniteMovingCards items={items} direction="right" speed="fast" />
     </Section>
   );
 }

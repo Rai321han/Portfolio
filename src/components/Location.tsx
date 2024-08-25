@@ -15,7 +15,7 @@ export default function Location() {
         </div>
       </div>
       <div className="font-Inter font-semibold text-[2rem] sm:text-[3rem] md:text-[3rem] leading-[2.5rem] sm:leading-[3.5rem]">
-        Chittagong <br />
+        Chittagong, <br />
         Bangladesh
       </div>
     </Section>

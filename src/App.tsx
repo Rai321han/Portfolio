@@ -20,12 +20,10 @@ function App() {
         <Resume />
         <Tech />
         <Social />
-        {/* <Share /> */}
         <Location />
         <Education />
         <ProjectIntro />
         <MyProjects />
-        {/* <Works /> */}
         <Contact />
         <Footer />
       </div>

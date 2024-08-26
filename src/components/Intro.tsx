@@ -1,4 +1,5 @@
 import Section from "./Section";
+import WordPullUp from "./ui/WordPullUp";
 
 export default function Intro() {
   return (
@@ -12,10 +13,14 @@ export default function Intro() {
             &nbsp; Uddin
           </div>
         </div>
-        <div className="text-[#8a8a93] font-semibold font-Inter leading-6 text-[1.6rem] lg:text-[3rem] lg:leading-[3.3rem] lg:col-[2/4] lg:pl-2">
+        <WordPullUp
+          className="text-[#8a8a93] font-semibold font-Inter leading-6 text-[1.4rem] lg:text-[3rem] lg:leading-[3.3rem] lg:col-[2/4] lg:pl-2 "
+          // words="Solving Frontend Problems Everyday..."
+        />
+        {/* <div className="text-[#8a8a93] font-semibold font-Inter leading-6 text-[1.6rem] lg:text-[3rem] lg:leading-[3.3rem] lg:col-[2/4] lg:pl-2">
           Solving <br /> <span className="text-white">Frontend Problems </span>
           <br /> For A While ...
-        </div>
+        </div> */}
       </div>
     </Section>
   );

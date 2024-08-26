@@ -29,7 +29,7 @@ export default function Tech() {
   ];
   const items = data.map((icon, index) => (
     <li className="flex items-center justify-center" key={index}>
-      <Icon key={`${icon[0]} + ${index}`} data={icon} />
+      <Icon key={index} data={icon} />
     </li>
   ));
 

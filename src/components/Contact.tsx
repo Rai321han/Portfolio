@@ -9,7 +9,7 @@ export default function Contact() {
       </p>
       <a
         target="_blank"
-        className="min-w-full block max-w-[700px] cursor-pointer font-Inter font-bold text-[2rem] px-3 xs:px-5 py-5 xs:py-8 bg-blue-500 rounded-[20px] text-center"
+        className="hover:bg-orange-600 min-w-full block max-w-[700px] cursor-pointer font-Inter font-bold text-[2rem] px-3 xs:px-5 py-5 xs:py-8 bg-orange-500 rounded-[20px] text-center"
         href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=Please+add+a+subject+line!&to=uddinraihan797@gmail.com"
       >
         send an email

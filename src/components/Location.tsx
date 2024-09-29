@@ -8,7 +8,7 @@ export default function Location() {
       <div className="flex flex-row justify-between">
         <div>
           <p className="font-Inter font-semibold text-[2rem] sm:text-[3rem] md:leading-[4rem]">
-            <span className="text-[#8a8a93]"> Based on</span>
+            <span className="text-[#8a8a93]"> Based in</span>
             <br />
           </p>
         </div>

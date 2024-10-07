@@ -9,7 +9,11 @@ export default function ProjectsShow({ project }: { project: WorkDataType }) {
     <Section className="group grid grid-cols-1 grid-rows-[350px_repeat(2,auto)] gap-4">
       <Light />
       <div className="row-[1/2] rounded-[20px] overflow-hidden">
-        <img className="object-cover w-full h-full" src={imageUrl} alt="" />
+        <img
+          className="group-hover:scale-110 z-[1] transition-transform duration-300 object-cover w-full h-full"
+          src={imageUrl}
+          alt=""
+        />
       </div>
       <div className="row-[2/3] flex flex-row justify-between mb-4 mt-[20px]">
         <div className="font-Inter text-[2rem] font-semibold">

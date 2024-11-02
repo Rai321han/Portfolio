@@ -8,8 +8,9 @@ import "./App.css";
 import Location from "./components/Location";
 import Education from "./components/Education";
 import ProjectIntro from "./components/ProjectIntro";
-import MyProjects from "./components/MyProjects";
+// import MyProjects from "./components/MyProjects";
 import Contact from "./components/Contact";
+import { ExpandableCard } from "./components/ProjectsCard/ExpandableCard";
 
 function App() {
   return (
@@ -23,7 +24,10 @@ function App() {
         <Location />
         <Education />
         <ProjectIntro />
-        <MyProjects />
+        <div className="flex flex-col col-[1/14] gap-2 md:gap-3 md:col-[1/11] row-[10/11] md:row-[8/9]">
+          {/* <MyProjects /> */}
+          <ExpandableCard />
+        </div>
         <Contact />
         <Footer />
       </div>

@@ -3,7 +3,7 @@ import Section from "./Section";
 export default function Contact() {
   return (
     <Section className=" col-[1/14] md:col-[1/11] row-[11/12] md:row-[11/12] grid grid-cols-[1fr_3fr_1fr] grid-rows-2">
-      <p className="text-center font-Inter font-semibold text-[1.8rem] md:text-[3rem] md:leading-[4rem] col-[1/4] row-[1/2] place-content-center">
+      <p className="text-center font-Inter font-semibold text-[1.4rem] md:text-[2.5rem] md:leading-[4rem] col-[1/4] row-[1/2] place-content-center">
         <span className="text-[#8a8a93]"> I'd love to hear from you!</span>
         <br />
       </p>

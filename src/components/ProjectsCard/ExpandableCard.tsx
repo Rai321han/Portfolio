@@ -10,6 +10,7 @@ import {
   JS_ICON,
   REACT_ICON,
   TAILWIND_ICON,
+  TS_ICON,
 } from "../icons";
 
 export function ExpandableCard() {
@@ -213,12 +214,12 @@ export function ExpandableCard() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="text-secondaryDim text-sm md:text-sm lg:text-base md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
+                    className="text-secondaryDim text-sm md:text-sm lg:text-base md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400  [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
                   >
                     <div>
                       <ul className="pl-5 flex flex-col gap-3">
-                        {active.features?.map((feature, index) => (
-                          <li key={index}>
+                        {active.features?.map((feature) => (
+                          <li key={feature}>
                             <div className="flex gap-2 items-center">
                               <CiCircleCheck className="w-5 h-5" />
                               <p>{feature}</p>
@@ -353,31 +354,31 @@ export const CloseIcon = () => {
 const cards = [
   {
     description:
-      "AI-driven travel platform offering personalized hotel recommendations, day-wise itineraries, and secure trip management with Google authentication.",
-    title: "The Wild Oasis",
+      "React Select component with features like multi-select, debounced search, customizable styles, selection limits, and dynamic option creation.",
+    title: "React Select Component",
     src: "/images/project2.webp",
     ctaText: "Visit",
-    fearues: [
-      "AI-Powered Recommendations",
-      "User Authentication",
-      "Personalized Trip Planning",
+    features: [
+      "Multiple Select",
+      "Searchable (Debounced)",
+      "Limit the number of selections",
+      "Customizable Style",
+      "Custom Option (Creatable on the fly)",
     ],
-    techs: [JS_ICON, REACT_ICON, TAILWIND_ICON, FIREBASE_ICON, GEMINI_ICON],
+    techs: [JS_ICON, TS_ICON, REACT_ICON, TAILWIND_ICON],
 
-    ctaLink: "https://ui.aceternity.com/templates",
-    githubLink: "https://github.com/Rai321han/AI-Trip-Planner",
+    ctaLink: "https://multi-select-component-brown.vercel.app/",
+    githubLink: "https://github.com/Rai321han/multi-select-component",
     content: () => {
       return (
         <p>
-          Babu Maan, a legendary Punjabi singer, is renowned for his soulful
-          voice and profound lyrics that resonate deeply with his audience. Born
-          in the village of Khant Maanpur in Punjab, India, he has become a
-          cultural icon in the Punjabi music industry. <br /> <br /> His songs
-          often reflect the struggles and triumphs of everyday life, capturing
-          the essence of Punjabi culture and traditions. With a career spanning
-          over two decades, Babu Maan has released numerous hit albums and
-          singles that have garnered him a massive fan following both in India
-          and abroad.
+          This project focuses on building a React Select component that’s both
+          flexible and feature-rich. It includes multi-select functionality,
+          debounced search for a smoother user experience, and the ability to
+          limit the number of selections. Users can customize the component’s
+          style to fit various design needs, and create custom options
+          dynamically, making it highly adaptable to different application
+          requirements.
         </p>
       );
     },

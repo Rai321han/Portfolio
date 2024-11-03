@@ -81,7 +81,7 @@ export function ExpandableCard() {
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-[900px]  h-full md:h-fit md:max-h-[90%] border-2 border-primaryDim  flex flex-col  bg-primary dark:bg-neutral-900 sm:rounded-3xl overflow-auto [&::-webkit-scrollbar]:hidden p-10 shadow-3xl shadow-black"
+              className="w-full max-w-[900px]  h-full md:h-fit md:max-h-[90%] border-2 border-primaryDim  flex flex-col  bg-primary dark:bg-neutral-900 rounded-xl sm:rounded-3xl overflow-auto [&::-webkit-scrollbar]:hidden  sm:p-10 shadow-3xl shadow-black"
             >
               <motion.div layoutId={`image-${active.title}-${id}`}>
                 {/* <Image
@@ -98,11 +98,11 @@ export function ExpandableCard() {
                   height={200}
                   src={active.src}
                   alt={active.title}
-                  className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-lg object-cover object-top"
+                  className="w-full h-80 hover:scale-105 transition-all lg:h-80 sm:rounded-tr-lg rounded-lg object-cover object-top"
                 />
               </motion.div>
 
-              <div>
+              <div className="p-7 sm:p-0">
                 <div className="flex flex-col sm:flex-row gap-3  sm:justify-between sm:items-center py-10 pl-0">
                   <div className="">
                     <motion.h3

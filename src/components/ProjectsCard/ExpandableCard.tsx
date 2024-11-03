@@ -52,7 +52,12 @@ export function ExpandableCard() {
       </AnimatePresence>
       <AnimatePresence>
         {active && typeof active === "object" ? (
-          <div className="fixed inset-0  grid place-items-center z-[100] p-3 bg-primaryDim">
+          <div className="fixed inset-0  grid place-items-center z-[100] p-3 bg-primaryDim ">
+            <img
+              src={active.src}
+              alt=""
+              className="absolute -z-10 blur-2xl h-[100vh] w-[100vw] scale-125 hue-rotate-15"
+            />
             <motion.button
               key={`button-${active.title}-${id}`}
               layout
@@ -68,7 +73,7 @@ export function ExpandableCard() {
                   duration: 0.05,
                 },
               }}
-              className="flex absolute top-2 right-2 lg:hidden items-center justify-center bg-white rounded-full h-6 w-6"
+              className="flex absolute top-2 right-2 lg:hidden items-center justify-center bg-white rounded-full h-10 w-10"
               onClick={() => setActive(null)}
             >
               <CloseIcon />
@@ -98,7 +103,7 @@ export function ExpandableCard() {
               </motion.div>
 
               <div>
-                <div className="flex justify-between items-center py-10 pl-0">
+                <div className="flex flex-col sm:flex-row gap-3  sm:justify-between sm:items-center py-10 pl-0">
                   <div className="">
                     <motion.h3
                       layoutId={`title-${active.title}-${id}`}
@@ -123,7 +128,7 @@ export function ExpandableCard() {
                       target="_blank"
                       className="font-Inter tracking-widest uppercase text-sm   rounded-full font-bold  text-secondary flex items-center"
                     >
-                      <div className="bg-primaryDim px-10 py-5 rounded-full hover:bg-secondary hover:text-primaryDim transition-all">
+                      <div className="bg-primaryDim px-7 py-4 sm:px-10 sm:py-5  rounded-full hover:bg-secondary hover:text-primaryDim transition-all">
                         {active.ctaText}
                       </div>
                     </motion.a>
@@ -136,7 +141,7 @@ export function ExpandableCard() {
                       target="_blank"
                       className="font-Inter tracking-widest uppercase text-sm  rounded-full font-bold  text-secondary flex items-center group"
                     >
-                      <div className="px-5 py-5 rounded-full bg-primaryDim hover:bg-secondary transition-all">
+                      <div className="px-4 py-4 sm:px-5 sm:py-5  rounded-full bg-primaryDim hover:bg-secondary transition-all">
                         {/* <GoLinkExternal className="w-5 h-5 fill-secondary" /> */}
                         <svg
                           width="26"
@@ -357,14 +362,8 @@ const cards = [
       "User Authentication",
       "Personalized Trip Planning",
     ],
-    techs: [
-      "JS",
-      "React",
-      "Tailwind CSS",
-      "Firebase",
-      "Google OAuth",
-      "Gemini API",
-    ],
+    techs: [JS_ICON, REACT_ICON, TAILWIND_ICON, FIREBASE_ICON, GEMINI_ICON],
+
     ctaLink: "https://ui.aceternity.com/templates",
     githubLink: "https://github.com/Rai321han/AI-Trip-Planner",
     content: () => {

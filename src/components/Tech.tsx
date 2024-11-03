@@ -1,7 +1,6 @@
 import SectionHead from "./SectionHead";
 import {
   JS_ICON,
-  TS_ICON,
   REACT_ICON,
   REDUX_ICON,
   JEST_ICON,
@@ -18,7 +17,7 @@ import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 export default function Tech() {
   const data: [JSX.Element, string][] = [
     [JS_ICON, "JavaScript"],
-    [TS_ICON, "TypeScript"],
+    // [TS_ICON, "TypeScript"],
     [REACT_ICON, "React"],
     [REDUX_ICON, "Redux"],
     [JEST_ICON, "Jest"],

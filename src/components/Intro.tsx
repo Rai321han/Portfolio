@@ -7,7 +7,7 @@ export default function Intro() {
       <div className="animate-moveShade absolute w-[500px] h-[100px] bg-gradient-to-r from-slate-50 to-primary blur-[160px] top-1/2 translate-x-[-50%] translate-y-[-50%] left-0"></div>
       <div className="flex flex-col lg:row-[2/3] lg:col-[1/4] gap-6 lg:grid lg:grid-cols-[auto_auto_auto] lg:grid-rows-[auto]">
         <div className=" text-textColor flex flex-col  justify-center items-center gap-4 lg:col-[1/2]">
-          <div className=" m-2 text-[5rem] font-Inter text-center font-bold leading-[4rem]">
+          <div className=" m-2 text-[5rem] intro-text text-center font-bold leading-[4rem]">
             Raihan
             <br />
             &nbsp; Uddin

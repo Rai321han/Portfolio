@@ -278,7 +278,7 @@ export function ExpandableCard() {
             onClick={() => setActive(card)}
             className="p-4 flex flex-col bg-primary h-full  hover:bg-primaryDim dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
           >
-            <div className="grid gap-4 grid-cols-1 md:grid-cols-2 w-full h-full">
+            <div className="grid gap-4 grid-cols-1 lg:grid-cols-2 w-full h-full">
               <motion.div layoutId={`image-${card.title}-${id}`}>
                 {/* <Image
                   width={100}

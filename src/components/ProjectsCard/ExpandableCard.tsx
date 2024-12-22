@@ -9,8 +9,9 @@ import {
   GEMINI_ICON,
   JS_ICON,
   REACT_ICON,
+  REACTQUERY_ICON,
+  REDUX_ICON,
   TAILWIND_ICON,
-  TS_ICON,
 } from "../icons";
 
 export function ExpandableCard() {
@@ -85,14 +86,6 @@ export function ExpandableCard() {
               className="w-full max-w-[900px]  h-full md:h-fit md:max-h-[90%] border-2 border-primaryDim  flex flex-col  bg-primary dark:bg-neutral-900 rounded-xl sm:rounded-3xl overflow-auto [&::-webkit-scrollbar]:hidden  sm:p-10 shadow-3xl shadow-black"
             >
               <motion.div layoutId={`image-${active.title}-${id}`}>
-                {/* <Image
-                  priority
-                  width={200}
-                  height={200}
-                  src={active.src}
-                  alt={active.title}
-                  className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
-                /> */}
                 <img
                   //   priority
                   width={200}
@@ -112,12 +105,6 @@ export function ExpandableCard() {
                     >
                       {active.title}
                     </motion.h3>
-                    {/* <motion.p
-                      layoutId={`description-${active.description}-${id}`}
-                      className="text-neutral-600 dark:text-neutral-400 text-base"
-                    >
-                      {active.description}
-                    </motion.p> */}
                   </div>
                   <div className="flex flex-row items-center">
                     <motion.a
@@ -143,7 +130,6 @@ export function ExpandableCard() {
                       className="font-Inter tracking-widest uppercase text-sm  rounded-full font-bold  text-secondary flex items-center group"
                     >
                       <div className="px-4 py-4 sm:px-5 sm:py-5  rounded-full bg-primaryDim hover:bg-secondary transition-all">
-                        {/* <GoLinkExternal className="w-5 h-5 fill-secondary" /> */}
                         <svg
                           width="26"
                           height="26"
@@ -158,20 +144,7 @@ export function ExpandableCard() {
                     </motion.a>
                   </div>
                 </div>
-                {/* 
-                <div className="pt-4s relative px-4">
-                  <motion.div
-                    layout
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    className="text-secondaryDim text-sm md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
-                  >
-                    {typeof active.content === "function"
-                      ? active.content()
-                      : active.content}
-                  </motion.div>
-                </div> */}
+
                 <div className="pt-4 relative ">
                   <motion.div
                     layout
@@ -305,7 +278,7 @@ export function ExpandableCard() {
                 </motion.h3>
                 <motion.p
                   layoutId={`description-${card.description}-${id}`}
-                  className="text-neutral-600  dark:text-neutral-400 text-left md:text-left text-base"
+                  className="text-neutral-400  dark:text-neutral-400 text-left md:text-left text-base"
                 >
                   {card.description}
                 </motion.p>
@@ -354,31 +327,34 @@ export const CloseIcon = () => {
 const cards = [
   {
     description:
-      "React Select component with features like multi-select, debounced search, customizable styles, selection limits, and dynamic option creation.",
-    title: "React Select Component",
+      "Expense Tracker is a web app for managing personal finances, allowing users to track expenses, income, and balance. ",
+    title: "Expense Tracker",
     src: "/images/project2.webp",
     ctaText: "Visit",
     features: [
-      "Multiple Select",
-      "Searchable (Debounced)",
-      "Limit the number of selections",
-      "Customizable Style",
-      "Custom Option (Creatable on the fly)",
+      "CRUD Operations on finance data",
+      "Filtering and Sorting",
+      "Data pagination",
+      "User authentication",
     ],
-    techs: [JS_ICON, TS_ICON, REACT_ICON, TAILWIND_ICON],
+    techs: [
+      JS_ICON,
+      REACT_ICON,
+      REDUX_ICON,
+      REACTQUERY_ICON,
+      TAILWIND_ICON,
+      FIREBASE_ICON,
+    ],
 
-    ctaLink: "https://multi-select-component-brown.vercel.app/",
-    githubLink: "https://github.com/Rai321han/multi-select-component",
+    ctaLink: "https://expense-tracker-raihan.vercel.app/",
+    githubLink: "https://github.com/Rai321han/Expense-Tracker",
     content: () => {
       return (
         <p>
-          This project focuses on building a React Select component that’s both
-          flexible and feature-rich. It includes multi-select functionality,
-          debounced search for a smoother user experience, and the ability to
-          limit the number of selections. Users can customize the component’s
-          style to fit various design needs, and create custom options
-          dynamically, making it highly adaptable to different application
-          requirements.
+          A web application for managing personal finances. Users can track
+          expenses and income, view their balance, and perform CRUD operations.
+          The app includes advanced features like sorting, filtering,
+          pagination, and authentication for a seamless user experience.
         </p>
       );
     },

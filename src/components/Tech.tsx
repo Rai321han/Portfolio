@@ -3,7 +3,6 @@ import {
   JS_ICON,
   REACT_ICON,
   REDUX_ICON,
-  JEST_ICON,
   TAILWIND_ICON,
   HTML_ICON,
   CSS_ICON,

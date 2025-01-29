@@ -8,6 +8,7 @@ import {
   HTML_ICON,
   CSS_ICON,
   FIGMA_ICON,
+  VITEST_ICON,
 } from "./icons";
 import Icon from "./Icon";
 import Section from "./Section";
@@ -20,7 +21,7 @@ export default function Tech() {
     // [TS_ICON, "TypeScript"],
     [REACT_ICON, "React"],
     [REDUX_ICON, "Redux"],
-    [JEST_ICON, "Jest"],
+    [VITEST_ICON, "Vitest"],
     [TAILWIND_ICON, "Tailwind"],
     [HTML_ICON, "HTML"],
     [CSS_ICON, "CSS"],

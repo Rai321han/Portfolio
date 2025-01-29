@@ -1,5 +1,5 @@
 import Icon from "./Icon";
-import { LINKEDIN_ICON, MAIL_ICON, GITHUB_ICON, SHARE_ICON } from "./icons";
+import { LINKEDIN_ICON, MAIL_ICON, GITHUB_ICON, FACEBOOK_ICON } from "./icons";
 import Light from "./Light";
 import Section from "./Section";
 export default function Social() {
@@ -51,14 +51,28 @@ export default function Social() {
             />
           </Section>
         </a>
-        <Section className="group flex-grow">
+        <a
+          className="flex-grow group"
+          href="https://www.facebook.com/abcde.fghijklmnopqrstuvwxyzlll/"
+          target="_blank"
+        >
+          <Section>
+            <Light />
+            <Icon
+              data={[FACEBOOK_ICON, "Facebook"]}
+              onHoverColorChange={true}
+              onHoverScale={true}
+            />
+          </Section>
+        </a>
+        {/* <Section className="group flex-grow">
           <Light />
           <Icon
             data={[SHARE_ICON, "Share this protfolio"]}
             onHoverColorChange={true}
             onHoverScale={true}
           />
-        </Section>
+        </Section> */}
       </div>
     </div>
   );

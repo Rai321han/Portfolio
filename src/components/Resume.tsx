@@ -6,7 +6,7 @@ export default function Resume() {
     <Section className="group flex flex-row justify-between items-center col-[1/14] md:col-[7/11] row-[4/5] md:row-[5/6]">
       <Light />
       <SectionHead>resume</SectionHead>
-      <a href="/RAIHAN_RESUME.pdf" download="RAIHAN_RESUME.pdf">
+      <a href="/Raihan_Uddin_Resume.pdf" download="Raihan_Uddin_Resume.pdf">
         <div className="hover:bg-orange-500 cursor-pointer bg-primaryDim rounded-[20px] px-[20px] py-[10px] flex felx-row gap-4 items-center">
           <span className="hidden sm:inline md:hidden lg:inline font-Inter">
             download

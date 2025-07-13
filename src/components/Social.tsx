@@ -1,5 +1,5 @@
 import Icon from "./Icon";
-import { LINKEDIN_ICON, MAIL_ICON, GITHUB_ICON, FACEBOOK_ICON } from "./icons";
+import { LINKEDIN_ICON, MAIL_ICON, GITHUB_ICON, LEETCODE_ICON } from "./icons";
 import Light from "./Light";
 import Section from "./Section";
 export default function Social() {
@@ -53,13 +53,13 @@ export default function Social() {
         </a>
         <a
           className="flex-grow group"
-          href="https://www.facebook.com/abcde.fghijklmnopqrstuvwxyzlll/"
+          href="https://leetcode.com/u/Raihan_321"
           target="_blank"
         >
           <Section>
             <Light />
             <Icon
-              data={[FACEBOOK_ICON, "Facebook"]}
+              data={[LEETCODE_ICON, "LeetCode"]}
               onHoverColorChange={true}
               onHoverScale={true}
             />

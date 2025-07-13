@@ -7,8 +7,8 @@
 @layer base {
   @font-face {
     font-family: "chaney";
-    src: url("../public/fonts/chaney-ultraextended-webfont.woff") format("woff"),
-      url("../public/fonts/chaney-ultraextended-webfont.woff2") format("woff2");
+    src: url("../fonts/chaney-ultraextended-webfont.woff") format("woff"),
+      url("../fonts/chaney-ultraextended-webfont.woff2") format("woff2");
   }
 }
 

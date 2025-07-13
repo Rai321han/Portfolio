@@ -7,7 +7,12 @@ import {
   HTML_ICON,
   CSS_ICON,
   FIGMA_ICON,
-  VITEST_ICON,
+  NEXT_ICON,
+  NODE_ICON,
+  EXPRESS_ICON,
+  SOCKET_ICON,
+  MONGODB_ICON,
+  GITLAB_ICON,
 } from "./icons";
 import Icon from "./Icon";
 import Section from "./Section";
@@ -16,14 +21,18 @@ import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 
 export default function Tech() {
   const data: [JSX.Element, string][] = [
-    [JS_ICON, "JavaScript"],
-    // [TS_ICON, "TypeScript"],
-    [REACT_ICON, "React"],
-    [REDUX_ICON, "Redux"],
-    [VITEST_ICON, "Vitest"],
-    [TAILWIND_ICON, "Tailwind"],
     [HTML_ICON, "HTML"],
     [CSS_ICON, "CSS"],
+    [JS_ICON, "JavaScript"],
+    [REACT_ICON, "React"],
+    [REDUX_ICON, "Redux"],
+    [NEXT_ICON, "NextJS"],
+    [NODE_ICON, "NodeJs"],
+    [EXPRESS_ICON, "ExpressJS"],
+    [SOCKET_ICON, "Socket.io"],
+    [MONGODB_ICON, "MongoDB"],
+    [TAILWIND_ICON, "Tailwind"],
+    [GITLAB_ICON, "Gitlab"],
     [FIGMA_ICON, "Figma"],
   ];
   const items = data.map((icon, index) => (

@@ -56,12 +56,7 @@ export default function WordPullUp({
         Solving
       </motion.span>
       <br />
-      <motion.span
-        variants={framerProps}
-        style={{ display: "inline-block", paddingRight: "8px" }}
-      >
-        <span className="text-textColor">Frontend</span>
-      </motion.span>
+
       <motion.span
         variants={framerProps}
         style={{ display: "inline-block", paddingRight: "8px" }}
